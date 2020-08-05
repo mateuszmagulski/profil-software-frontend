@@ -66,6 +66,7 @@ Player:
  -v(p) _cards []
  -v active boolean
  -m addCard()
+ -m addPoints()
  -m getPointsValue()
  -m checkCanPlay()
 Draw:
