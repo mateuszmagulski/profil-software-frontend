@@ -56,10 +56,12 @@ gra:
 
 klasy 
 Game:
+ -v players []
  -m render()
  -m addPlayer()
  -m startGame() 
 Player:
+ -v name
  -v(p) _points 'number'
  -v(p) _cards []
  -v active boolean

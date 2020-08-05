@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url("../img/background.jpg");
+}
+button {
+    padding: 5px;
+}
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+header {
+    font-family: Ewert, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: yellow;
+    padding: 10px;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    }
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+.player_boards {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.player_board {
+    margin: 5px;
+    padding: 5px;
+    flex-basis: 25%;
+    min-height: 100px;
+    text-align: center;
+    display: flex;
+    border: 2px solid gray;
+}
+
+.start_game {
+    text-align: center;
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.actions {
+    padding: 10px;
+}
+.cards {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+}
+.card {
+    height: 100%;
+}
+.card img {
+    max-width:100%;
+    max-height:100%;
+}
+.player_name {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: yellow;
+}
+.cards_value{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: yellow;
+}
