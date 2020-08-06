@@ -1,7 +1,7 @@
 "use strict";
 class Result {
     static checkWin(game_result) {
-        let winner = [{ player: '', points: 0 }];
+        let winner = [{ player: 0, points: 0 }];
         game_result.forEach(player_result => {
             if (winner[0].points < player_result.points) {
                 winner = [player_result];

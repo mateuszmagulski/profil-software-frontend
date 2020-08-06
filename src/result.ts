@@ -1,10 +1,10 @@
-type PlayerResult = {player: string; points:number}
+type PlayerResult = {player: number; points:number}
 type GameResult = PlayerResult[]
 
 class Result {
 
     static checkWin(game_result:GameResult) {
-        let winner: GameResult = [{player:'',points:0}]
+        let winner: GameResult = [{player:0,points:0}]
         game_result.forEach(player_result=> {
             if (winner[0].points < player_result.points) {
                 winner = [player_result];
