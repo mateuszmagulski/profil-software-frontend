@@ -113,9 +113,9 @@ class Game {
         }
     }
     playerEndRound(result) {
-        let message = '';
+        let message = `${this.active_player.name} zakonczył turę z wynikiem: ${this.active_player.getPointsValue()} </br></br>`;
         if (result.win) {
-            message = `${result.player.name} wygrał uzyskując "PERSKIE OCZKO"`;
+            message += `${result.player.name} wygrał uzyskując "PERSKIE OCZKO"`;
             this.active = false;
             this.render(message);
             return;
@@ -131,27 +131,27 @@ class Game {
         }
         if (this.active_player.id === this.players.length - 1 &&
             !this.winner.length) {
-            message = `${this.players[this.players.length - 1].name} wygrał, inni uzyskali więcej niż 21 punktów`;
+            message += `${this.players[this.players.length - 1].name} wygrał, inni uzyskali więcej niż 21 punktów`;
             this.active = false;
             this.render(message);
             return;
         }
         if (this.active_player.id === this.players.length) {
-            message = `Koniec gry, wygrywa: ${this.winner
+            message += `Koniec gry, wygrywa: ${this.winner
                 .map((player) => `${player.name} - ${player.getPointsValue()}`)
                 .join(', ')}`;
             this.active = false;
             this.render(message);
         }
         else {
-            message = 'Następny gracz!!!';
+            message += 'Następny gracz!!!';
             this.render(message);
         }
     }
     render(message = '') {
         if (message) {
             this.message_box.style.display = 'flex';
-            this.message_div.textContent = message;
+            this.message_div.innerHTML = message;
         }
         this.player_boards.forEach((board, index) => {
             if (this.players[index]) {
