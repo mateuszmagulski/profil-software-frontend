@@ -41,7 +41,7 @@ class Game {
         this.render();
     }
     async getDeck() {
-        const result = await fetch('https://deckofcardsapi.com/api/deck/new/');
+        const result = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
         const data = await result.json();
         this.deck = data.deck_id;
     }
@@ -201,3 +201,5 @@ class Game {
     }
 }
 const game = new Game();
+game.getDeck();
+export { Game };

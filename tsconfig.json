@@ -5,11 +5,11 @@
     "lib": ["ESNext", "dom"],
     "allowJs": true,
     "outDir": "build",
-    "rootDir": "src",
     "strict": false,
     "noImplicitAny": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true
-  }
+  },
+  "files": ["src/draw.ts", "src/game.ts", "src/player.ts"]
 }
