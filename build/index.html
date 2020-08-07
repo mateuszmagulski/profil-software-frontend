@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gra w oczko</title>
-    <link href='https://fonts.googleapis.com/css?family=Ewert' rel='stylesheet'>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ewert"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <header>Gra w Oczko</header>
-        <main>
-            <section class="card_deck">
-                
-            </section>
-            <section class="player_boards">
-                <div class="player_board">
-                    <div class="player_name"></div>
-                    <div class="cards"></div>
-                    <div class="actions">
-                        <span class="player_result"></span>
-                        <button class="del_player">USUŃ GRACZA</button>
-                    </div>
-                </div>
-                <div class="player_board">
-                    <div class="player_name"></div>
-                    <div class="cards"></div>
-                    <div class="actions">
-                        <span class="player_result"></span>
-                        <button class="del_player">USUŃ GRACZA</button>
-                    </div>
-                </div>
-                <div class="player_board">
-                    <div class="player_name"></div>
-                    <div class="cards"></div>
-                    <div class="actions">
-                        <span class="player_result"></span>
-                        <button class="del_player">USUŃ GRACZA</button>
-                    </div>
-                </div>
-                <div class="player_board">
-                    <div class="player_name"></div>
-                    <div class="cards"></div>
-                    <div class="actions">
-                        <span class="player_result"></span>
-                        <button class="del_player">USUŃ GRACZA</button>
-                    </div>
-                </div>
-                <div class="player_board add_player">
-                    <div class="actions">
-                        <button id="add_player_button">DODAJ GRACZA</button>
-                    </div>
-                </div>
-            </section>
-            <section class="start_game">
-                <button id="start">Rozpocznij grę</button>
-                <button id="AITurn">Ruch Komputera</button>
-                <button id="draw">Dobierz</button>
-                <button id="pass">Spasuj</button>
-            </section>
-        </main>
-        <footer>Zadanie rekrutacyjne</footer>
-        <div id="message_box">
-            <div>
-                <div id="message">Wiadomosć</div>
-                <button id="confirm_message">Ok</button>
+      <header>Gra w Oczko</header>
+      <main>
+        <section class="card_deck"></section>
+        <section class="player_boards">
+          <div class="player_board">
+            <div class="player_name"></div>
+            <div class="cards"></div>
+            <div class="actions">
+              <span class="player_result"></span>
+              <button class="del_player">USUŃ GRACZA</button>
             </div>
+          </div>
+          <div class="player_board">
+            <div class="player_name"></div>
+            <div class="cards"></div>
+            <div class="actions">
+              <span class="player_result"></span>
+              <button class="del_player">USUŃ GRACZA</button>
+            </div>
+          </div>
+          <div class="player_board">
+            <div class="player_name"></div>
+            <div class="cards"></div>
+            <div class="actions">
+              <span class="player_result"></span>
+              <button class="del_player">USUŃ GRACZA</button>
+            </div>
+          </div>
+          <div class="player_board">
+            <div class="player_name"></div>
+            <div class="cards"></div>
+            <div class="actions">
+              <span class="player_result"></span>
+              <button class="del_player">USUŃ GRACZA</button>
+            </div>
+          </div>
+          <div class="player_board add_player">
+            <div class="actions">
+              <button id="add_player_button">DODAJ GRACZA</button>
+            </div>
+          </div>
+        </section>
+        <section class="game_options">
+          <button id="start">Rozpocznij grę</button>
+          <button id="AITurn">Ruch Komputera</button>
+          <button id="draw">Dobierz</button>
+          <button id="pass">Spasuj</button>
+        </section>
+      </main>
+      <footer>Zadanie rekrutacyjne</footer>
+      <div id="message_box">
+        <div>
+          <div id="message">Wiadomosć</div>
+          <button id="confirm_message">Ok</button>
         </div>
+      </div>
     </div>
-</body>
-<script type="module" src="game.js"></script>
+  </body>
+  <script type="module" src="game.js"></script>
 </html>
