@@ -16,43 +16,58 @@
             </section>
             <section class="player_boards">
                 <div class="player_board">
-                    <div class="player_name">Gracz 1</div>
-                    <div class="cards">
-                        <div class="card"><img src="https://deckofcardsapi.com/static/img/KH.png"></div>
-                    </div>
+                    <div class="player_name"></div>
+                    <div class="cards"></div>
                     <div class="actions">
-                        <button>DOBIERZ</button>
-                        <button>SPASUJ</button>
+                        <span class="player_result"></span>
+                        <button class="del_player">USUŃ GRACZA</button>
                     </div>
                 </div>
                 <div class="player_board">
-                    <div class="player_name">Gracz 1</div>
-                    <div class="cards">karty</div>
+                    <div class="player_name"></div>
+                    <div class="cards"></div>
                     <div class="actions">
-                        <button>DOBIERZ</button>
-                        <button>SPASUJ</button>
+                        <span class="player_result"></span>
+                        <button class="del_player">USUŃ GRACZA</button>
                     </div>
                 </div>
                 <div class="player_board">
-                    <div class="player_name">Gracz 1</div>
-                    <div class="cards">karty</div>
+                    <div class="player_name"></div>
+                    <div class="cards"></div>
                     <div class="actions">
-                        <button>DOBIERZ</button>
-                        <button>SPASUJ</button>
+                        <span class="player_result"></span>
+                        <button class="del_player">USUŃ GRACZA</button>
                     </div>
                 </div>
                 <div class="player_board">
+                    <div class="player_name"></div>
+                    <div class="cards"></div>
                     <div class="actions">
-                        <button>DODAJ GRACZA</button>
+                        <span class="player_result"></span>
+                        <button class="del_player">USUŃ GRACZA</button>
+                    </div>
+                </div>
+                <div class="player_board add_player">
+                    <div class="actions">
+                        <button id="add_player_button">DODAJ GRACZA</button>
                     </div>
                 </div>
             </section>
             <section class="start_game">
-                <button>Rozpocznij grę</button>
+                <button id="start">Rozpocznij grę</button>
+                <button id="AITurn">Ruch Komputera</button>
+                <button id="draw">Dobierz</button>
+                <button id="pass">Spasuj</button>
             </section>
         </main>
         <footer>Zadanie rekrutacyjne</footer>
+        <div id="message_box">
+            <div>
+                <div id="message">Wiadomosć</div>
+                <button id="confirm_message">Ok</button>
+            </div>
+        </div>
     </div>
 </body>
-<script src="stats.js"></script>
+<script type="module" src="game.js"></script>
 </html>

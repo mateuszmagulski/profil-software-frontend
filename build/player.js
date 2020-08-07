@@ -1,4 +1,3 @@
-"use strict";
 const card = {
     code: "AS",
     image: "https://deckofcardsapi.com/static/img/AS.png",
@@ -10,11 +9,11 @@ const card = {
     suit: "SPADES"
 };
 class Player {
-    constructor(name) {
+    constructor(name, ai) {
         this.name = name;
         this.points = 0;
         this.cards = [];
-        this.active = false;
+        this.ai = ai;
     }
     addCard(card) {
         this.cards.push(card);
@@ -26,18 +25,28 @@ class Player {
         return this.points;
     }
     checkCanPlay() {
-        return this.points < 21 ? true : false;
+        let result;
+        if (this.points === 22 && this.cards.length === 2) {
+            result = { canPlay: false, win: true, lose: false };
+        }
+        else if (this.points > 21) {
+            result = { canPlay: false, win: false, lose: true };
+        }
+        else {
+            result = { canPlay: true, win: false, lose: false };
+        }
+        return result;
     }
 }
-const player_1 = new Player("Gracz 1");
-console.log(player_1.cards);
-player_1.addCard(card);
-console.log(player_1.cards);
-console.log("--------------");
-console.log(player_1.getPointsValue());
-player_1.addPoints(10);
-console.log(player_1.getPointsValue());
-console.log(player_1.checkCanPlay());
-player_1.addPoints(11);
-console.log(player_1.getPointsValue());
-console.log(player_1.checkCanPlay());
+// console.log(player_1.cards)
+// player_1.addCard(card)
+// console.log(player_1.cards)
+// console.log("--------------")
+// console.log(player_1.getPointsValue())
+// player_1.addPoints(10)
+// console.log(player_1.getPointsValue())
+// console.log(player_1.checkCanPlay())
+// player_1.addPoints(11)
+// console.log(player_1.getPointsValue())
+// console.log(player_1.checkCanPlay())
+export { Player };

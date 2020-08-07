@@ -82,3 +82,7 @@ Stats:
  -m addPlayerResult()
  -m showGameResult()
 
+wygrana:
+1. perskie oko
+2. wszyscy inni maja wiecej niz 21
+3. mam najblizej do 21 na koniec
