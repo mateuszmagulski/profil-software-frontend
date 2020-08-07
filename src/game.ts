@@ -147,7 +147,11 @@ class Game {
   playerEndRound(result: { player: Player; win: boolean; lose: boolean }) {
     let message = `${
       this.active_player.name
-    } zakonczył turę z wynikiem: ${this.active_player.getPointsValue()} </br></br>`;
+    } zakonczył turę z wynikiem: ${this.active_player.getPointsValue()} </br></br>
+    ${this.active_player.cards.map(
+      (card) => `<img class="message_img" src="${card.image}" />`
+    )}
+    </br></br>`;
     if (result.win) {
       message += `${result.player.name} wygrał uzyskując "PERSKIE OCZKO"`;
       this.active = false;
