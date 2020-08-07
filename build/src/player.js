@@ -39,15 +39,4 @@ class Player {
         return result;
     }
 }
-// console.log(player_1.cards)
-// player_1.addCard(card)
-// console.log(player_1.cards)
-// console.log("--------------")
-// console.log(player_1.getPointsValue())
-// player_1.addPoints(10)
-// console.log(player_1.getPointsValue())
-// console.log(player_1.checkCanPlay())
-// player_1.addPoints(11)
-// console.log(player_1.getPointsValue())
-// console.log(player_1.checkCanPlay())
 export { Player };

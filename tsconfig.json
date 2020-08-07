@@ -2,14 +2,14 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "lib": ["ESNext","dom"],
-    "allowJs": true, 
+    "lib": ["ESNext", "dom"],
+    "allowJs": true,
     "outDir": "build",
     "rootDir": "src",
     "strict": false,
     "noImplicitAny": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "resolveJsonModule": true
   }
 }

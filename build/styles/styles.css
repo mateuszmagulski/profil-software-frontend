@@ -1,111 +1,113 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background-image: url("../img/background.jpg");
+  background-image: url('../img/background.jpg');
 }
 button {
-    padding: 5px;
+  padding: 5px;
 }
 .wrapper {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }
 header {
-    font-family: Ewert, sans-serif;
-    font-size: 50px;
-    text-align: center;
-    color: yellow;
-    padding: 10px;
+  font-family: Ewert, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: yellow;
+  padding: 10px;
 }
 main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    }
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 footer {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 .player_boards {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .player_board {
-    margin: 5px;
-    padding: 5px;
-    flex-basis: 25%;
-    max-height: 100px;
-    text-align: center;
-    display: none;
-    border: 2px solid gray;
+  margin: 5px;
+  padding: 5px;
+  flex-basis: 25%;
+  max-height: 100px;
+  text-align: center;
+  display: none;
+  border: 2px solid gray;
 }
 
 .start_game {
-    text-align: center;
-    flex-basis: 10%;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+  text-align: center;
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 .actions {
-    padding: 10px;
+  padding: 10px;
 }
 .cards {
-    padding: 10px;
-    flex-grow: 1;
-    display: flex;
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
 }
 
 .cards img {
-    margin-left: 5px;
-    max-width:100%;
-    max-height:100%;
+  margin-left: 5px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .player_name {
-    min-width: 20%;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    color: yellow;
+  min-width: 20%;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: yellow;
 }
-.player_result{
-    padding: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    color: yellow;
+.player_result {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: yellow;
 }
 .del_player {
-    display:none;
+  display: none;
 }
-#message_box{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: gray;
-    opacity: 80%;
-    display:none;
-    flex-direction: column;
-    justify-content: center;
+#message_box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 80%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
 }
 #message_box div {
-    background-color: black;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    padding: 40px;
+  background-color: black;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 40px;
 }
 #confirm_message {
-    background-color: azure;
-    width: 20%;
+  background-color: azure;
+  width: 20%;
 }
-#AITurn {
-    display:none;
+#AITurn,
+#pass,
+#draw {
+  display: none;
 }
